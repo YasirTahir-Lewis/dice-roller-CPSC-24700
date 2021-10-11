@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<!--
+    Author:  Yasir Tahir
+    Class:   Web and Distributed Programming 
+    Description: Dice Roller for game Yahtzee
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Potpourri</title>
+    <link rel="stylesheet" href="dice-roller.css">
+    <script src="dice-roller.js"></script>
+</head>
+<!--
+        This onload function allows us to make the dice roll as soon as the page loads.
+    -->
+
+<body onload=RollSixSidedDice()>
+    <h2>Dice Roller for Yahtzee</h2>
+    <p>This is Dice Roller application specifically for Yahtzee game. In this app each player can roll five six sided dices in one shot.</p>
+    <!--
+            Here the autofocus allows us to get the focus to Roll dice button automatically so we can roll the dice by just entering the enter.
+        -->
+    <button type="button" onclick="RollSixSidedDice()" autofocus>Roll Dice</button><br><br>
+    <!--
+            Here I have added four more dices because we need total five dices to play this game.
+        -->
+    Six Sided Dice 1: <input id="dice1" type="text" value1="" size="5" disabled><br><br> Six Sided Dice 2: <input id="dice2" type="text" value2="" size="5" disabled><br><br> Six Sided Dice 3: <input id="dice3" type="text" value3="" size="5" disabled><br><br>    Six Sided Dice 4: <input id="dice4" type="text" value4="" size="5" disabled><br><br> Six Sided Dice 5: <input id="dice5" type="text" value5="" size="5" disabled><br><br>
+
+</body>
+
+</html>
